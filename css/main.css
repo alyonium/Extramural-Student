@@ -36,11 +36,117 @@
     font-style: normal;
 }
 
+.request {
+    display: none;
+    transition: 1s;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5);
+    z-index: 20;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.request-content {
+    margin-left: calc(50vw - 185px);
+    margin-top: calc(50vh - 225px);
+    padding: 30px 25px 40px;
+    animation-name: animate;
+    animation-duration: 0.5s;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 320px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+@keyframes animate {
+    from {
+        top: -320px;
+        opacity:0
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.request-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.request__title {
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #de2925;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.request__text {
+    text-align: center;
+    max-width: 230px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #1c1c1c;
+}
+
+.request__close {
+    object-fit: contain;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.request__close:hover {
+    cursor: pointer;
+}
+
+.request-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.request-form {
+    text-transform: uppercase;
+    width: 280px;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.request-button {
+    padding: 20px 70px;
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    text-align: center;
+    align-items: center;
+}
+
 html{
+    overflow-x: hidden;
 }
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 .slide {
@@ -51,8 +157,9 @@ body {
 }
 
 .slide-wrapper {
-    max-width: 1210px;
+    max-width: 1170px;
     padding: 0 20px;
+    width: calc(100% - 40px);
 }
 
 .slide__button {
@@ -122,22 +229,24 @@ body {
 
 .header {
     z-index: 10;
+    max-width: 1170px;
+    width: 100%;
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
 }
 
 .header-wrapper {
-    margin: 20px 0 0 0;
+    margin-top: 20px;
     padding: 25px 70px;
     background-color: #fff;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 12px 53px 0 rgba(217,217,217,1);
-}
-
-.header-info {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    box-shadow: 0 12px 53px 0 rgba(217,217,217,1);
 }
 
 .header-description {
@@ -183,11 +292,12 @@ body {
 .slide1-main {
     display: flex;
     justify-content: space-between;
+    margin-top: 180px;
 }
 
 .slide1-description {
     max-width: 501px;
-    margin: 55px 0 0 70px ;
+    margin-left: 70px ;
 }
 
 .slide1-description__small {
@@ -235,27 +345,38 @@ body {
     top: 160px;
 }
 
-.slide1-cards {
+.slide2 {
+
+}
+
+.slide2-wrapper {
+    z-index: 9;
+    width: 100%;
+    margin-top: 130px;
+}
+
+.slide2-cards {
     display: flex;
     justify-content: space-between;
 }
 
-.slide1-card {
+.slide2-card {
     padding: 0 30px;
     max-width: 120px;
-    border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 7px;
+    box-shadow: 14px 8px 22px -2px rgba(173,173,173,1);
     display: flex;
     flex-direction: column;
     height: 290px;
+    background: #fff;
 }
 
-.slide1-card__img {
+.slide2-card__img {
     object-fit: contain;
     margin: 50px 0 30px;
 }
 
-.slide1-card__text {
+.slide2-card__text {
     font-family: 'Gotham Pro', sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -264,7 +385,31 @@ body {
     margin: 0;
 }
 
-.slide2-wrapper {
-    width: 100%;
-    margin-top: 500px;
+.slide3 {
+
 }
+
+.slide3-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.slide3-lettering {
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 700;
+    font-size: 120px;
+    text-align: center;
+    color: #636363;
+    text-transform: uppercase;
+    opacity: 0.1;
+}
+
+@media (max-width: 1440px) {}
+
+@media (max-width: 1250px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
