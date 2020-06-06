@@ -1,0 +1,270 @@
+/*slide - pictures, slide-wrapper - locations*/
+/* header z-index 10*/
+
+
+@font-face {
+    font-family: 'Plumb';
+    src: local('Plumb'),
+    url(../font/ofont.ru_Plumb.ttf);
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: local('../font/Roboto-Regular'), local('../font/Roboto-Regular'), url('../font/Roboto-Regular.woff') format('woff'), url('../font/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: local('../font/Roboto-Medium'), local('../font/Roboto-Medium'), url('../font/Roboto-Medium.woff') format('woff'), url('../font/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: local('../font/Roboto-Bold'), local('../font/Roboto-Bold'), url('../font/Roboto-Bold.woff') format('woff'), url('../font/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Gotham Pro';
+    src: local('../font/GothamPro-Black'), local('../font/GothamPro-Black'), url('../font/GothamPro-Black.woff') format('woff'), url('../font/GothamPro-Black.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html{
+}
+
+body {
+    margin: 0;
+}
+
+.slide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-wrapper {
+    max-width: 1210px;
+    padding: 0 20px;
+}
+
+.slide__button {
+    position: relative;
+    background: rgb(179,18,23);
+    background: linear-gradient(90deg, rgba(179,18,23,1) 0%, rgba(229,45,39,1) 100%);
+    border-radius: 60px;
+    border: none;
+    transition: 3s;
+}
+
+.slide__button:hover {
+    cursor: pointer;
+    background: rgb(152,14,19);
+    background: linear-gradient(90deg, rgba(152,14,19,1) 0%, rgba(179,18,23,1) 100%);
+    transition: 3s;
+}
+
+.slide__button:active {
+    cursor: pointer;
+    background: rgb(111,10,14);
+    background: linear-gradient(90deg, rgba(111,10,14,1) 0%, rgba(152,14,19,1) 100%);
+    transition: 3s;
+}
+
+.slide__button:focus {
+    outline: none;
+}
+
+.slide__button_size {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.slide__button_text {
+    font-family: 'Plumb', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slide__button-svg{
+
+}
+
+.slide1-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    z-index: 3;
+}
+
+.slide1 {
+}
+
+.slide1-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /*object-fit: contain;*/
+}
+
+.header {
+    z-index: 10;
+}
+
+.header-wrapper {
+    margin: 20px 0 0 0;
+    padding: 25px 70px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 12px 53px 0 rgba(217,217,217,1);
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 175px;
+}
+
+.header-description__logo{
+
+}
+
+.header-description__text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #1c1c1c;
+    max-width: 260px;
+    margin: 0 0 0 35px;
+}
+
+.header-call {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-call__number {
+    margin-right: 35px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1c1c1c;
+}
+
+.header-call__button {
+    width: 235px;
+    height: 50px;
+}
+
+.slide1-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide1-description {
+    max-width: 501px;
+    margin: 55px 0 0 70px ;
+}
+
+.slide1-description__small {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1c1c1c;
+    margin: 0;
+}
+
+.slide1-description__title {
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 700;
+    color: #de2925;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 57px;
+    margin: 24px 0 40px 0;
+}
+
+.slide1__button {
+    margin: 35px 0 60px;
+    width: 305px;
+    height: 60px;
+    box-shadow: 0px 26px 24px -6px rgba(230,141,139,1);
+}
+
+.slide1-description-sale {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.slide1-description-sale__text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0 0 0 15px;
+}
+
+.slide1-hand {
+    position: absolute;
+    right: 0;
+    top: 160px;
+}
+
+.slide1-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide1-card {
+    padding: 0 30px;
+    max-width: 120px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+}
+
+.slide1-card__img {
+    object-fit: contain;
+    margin: 50px 0 30px;
+}
+
+.slide1-card__text {
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1c1c1c;
+    text-align: center;
+    margin: 0;
+}
+
+.slide2-wrapper {
+    width: 100%;
+    margin-top: 500px;
+}
