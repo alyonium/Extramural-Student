@@ -12,12 +12,10 @@ $(document).ready(function () {
     //modal window
     $('.modal-button').click(function () {
         $('.request').css('display', 'block');
-        $('html').css('overflow-y', 'hidden');
     });
 
     $('.request__close').click(function () {
         $('.request').css('display', 'none');
-        $('html').css('overflow-y', 'scroll');
     });
 
 });
