@@ -250,6 +250,11 @@ body {
     max-width: 440px;
 }
 
+.slide-text_view {
+    max-width: 700px;
+    z-index: 9;
+}
+
 .slide__span {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -895,6 +900,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 9;
 }
 
 .slide13__header {
@@ -986,6 +992,7 @@ body {
     margin-top: 10px;
     margin-bottom: 70px;
 }
+
 .slide13__button-first {
     background: #fff;
     color: #de2925;
@@ -995,6 +1002,21 @@ body {
     height: 50px;
     position: absolute;
     bottom: -25px;
+    z-index: 8;
+}
+
+.slide13__button-first:hover {
+    cursor: pointer;
+    background: rgb(179,18,23);
+    background: linear-gradient(0deg, rgba(179,18,23,0.12088585434173671) 0%, rgba(229,45,39,0.03125) 100%);
+    transition: 3s;
+}
+
+.slide13__button-first:active {
+    cursor: pointer;
+    background: rgb(179,18,23);
+    background: linear-gradient(0deg, rgba(179,18,23,0.47102591036414565) 0%, rgba(229,45,39,0.4766281512605042) 100%);
+    transition: 3s;
 }
 
 .slide13__button-second {
@@ -1003,6 +1025,24 @@ body {
     height: 50px;
     position: absolute;
     bottom: -25px;
+}
+.slide14 {
+    position: relative;
+}
+
+.slide14-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    z-index: 9;
+}
+
+.slide14-background {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
 }
 
 @media (max-width: 1440px) {}
