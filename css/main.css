@@ -300,6 +300,9 @@ body {
     max-width: 440px;
 }
 
+.slide-text_padding {
+}
+
 .slide-text_view {
     max-width: 700px;
     z-index: 9;
@@ -1175,13 +1178,362 @@ body {
     z-index: 0;
 }
 
+@media (max-width: 1250px) {
+    .header-description__text {
+        display: none;
+    }
 
-@media (max-width: 1440px) {}
+    .slide1-hand {
+        display: none;
+    }
 
-@media (max-width: 1250px) {}
+    .slide1-wrapper {
+        align-items: center;
+    }
 
-@media (max-width: 992px) {}
+    .slide1-description {
+        margin-left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-@media (max-width: 768px) {}
+    .slide-text_padding {
+        padding-left: 20px;
+    }
 
-@media (max-width: 576px) {}
+    .slide12-wrapper {
+        padding: 0;
+    }
+
+    .slide14-wrapper {
+        margin-top: 0;
+        align-items: center;
+    }
+
+    .slide-lettering {
+        font-size: 100px;
+    }
+
+    .slide-reasons_padding {
+        padding-right: 80px;
+    }
+
+    .slide7-advantage {
+        flex-wrap: wrap;
+        margin: 30px;
+        max-width: 410px;
+    }
+}
+
+@media (max-width: 992px) {
+    .slide-cards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .slide10-main {
+        flex-direction: column-reverse;
+    }
+
+    .slide-card {
+        margin: 20px 35px;
+    }
+
+    .slide-card_size {
+        margin: 0 10px;
+    }
+
+    .slide-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slide__span {
+        align-self: flex-start;
+    }
+
+    .slide7-advantage {
+        max-width: 300px;
+    }
+
+    .slide-text {
+        max-width: 700px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slide__header {
+        align-self: flex-start;
+    }
+
+    .slide__header_center {
+        align-self: center;
+    }
+
+    .header-call__number {
+        display: none;
+    }
+
+    .slide5-main {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .slide12-wrapper {
+        width: 100%;
+    }
+
+    .slide13-columns {
+        flex-wrap: wrap;
+    }
+
+    .slide13-column-first {
+        margin: 0 30px 80px;
+    }
+
+    .slide13-column-second {
+        margin: 0 30px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .slide-pictures {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 70px;
+    }
+
+    .slide-picture {
+        margin-top: 30px;
+    }
+
+    .slide7-wrapper {
+        align-items: center;
+    }
+
+    .slide7-advantages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slide7-advantage {
+        margin: 35px;
+        max-width: 500px;
+    }
+
+    .slide-lettering {
+        font-size: 60px;
+    }
+
+    .slide5-lettering {
+        right: auto;
+        z-index: 9;
+    }
+
+    .slide12-wrapper {
+        width: auto;
+    }
+
+    .slide-text_padding {
+        padding: 0 20px;
+    }
+
+    .header-call__button p {
+        display: none;
+    }
+
+    .header-call__button {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slide-card {
+        margin: 20px;
+    }
+
+    .slide-text {
+        max-width: 570px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-wrapper {
+        padding: 25px 20px;
+        margin: 0;
+    }
+
+    .header-description {
+        margin-right: 0;
+    }
+
+    .header__button-svg {
+        z-index: 50;
+    }
+
+    .slide1-background {
+        width: auto;
+        top: -30px;
+    }
+
+    .slide5-image {
+        width: 470px;
+    }
+
+
+}
+
+@media (max-width: 440px) {
+    .slide-cards {
+        justify-content: flex-start;
+        margin: 20px 0;
+    }
+
+    .slide1-description__small {
+        width: 220px;
+    }
+
+    .slide1-description__title {
+        font-size: 30px;
+        width: 320px;
+        line-height: 115%;
+    }
+
+    .slide1-description_width {
+        width: 320px
+    }
+
+    .slide1-description-sale__text {
+        text-align: left;
+    }
+
+    .slide1-background {
+        top: -110px;
+    }
+
+    .slide-card {
+        margin: 20px 0 20px 25px;
+        padding: 0 15px;
+    }
+
+    .slide-lettering {
+        font-size: 40px;
+    }
+
+    .slide1-lettering {
+        margin: -50px;
+        z-index: 0;
+    }
+
+    .slide-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .slide-image {
+        width: 320px;
+        z-index: 9;
+    }
+
+    .slide-text {
+        margin-top: 30px;
+    }
+
+    .slide-article {
+        padding:0;
+    }
+
+    .slide__header_center {
+        width: 350px;
+    }
+
+    .slide4-wrapper {
+        margin-bottom: 200px;
+    }
+
+    .slide5-background {
+        right: -82px;
+        width: 450px;
+        top: -65px;
+    }
+
+    .slide5-image {
+        margin-bottom: 50px;
+    }
+
+    .slide6-image {
+        position: absolute;
+        top: -70px;
+        right: -40px;
+    }
+
+    .slide6-wrapper {
+        margin-top: 300px;
+        margin-bottom: 100px;
+    }
+
+    .slide6-facts {
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+
+    .slide6-fact {
+        width: 120px;
+    }
+
+    .slide7-advantage {
+        margin-top: 20px;
+    }
+
+    .slide7-advantage {
+        margin-top:0;
+    }
+
+    .slide7__button {
+        margin-top: 0;
+    }
+
+    .slide8-lettering {
+        top: -40px;
+    }
+
+    .slide-reason_margin {
+        margin: 20px 70px 150px;
+    }
+
+    .slide9__button {
+        width: 300px;
+    }
+
+    .slide10-lettering {
+        top: -50px;
+    }
+
+    .slide5-image {
+        margin-left: 0;
+        width: 340px;
+    }
+
+    .slide12-wrapper {
+        width: 320px;
+    }
+
+    .slide13-column {
+        margin: 0;
+    }
+
+    .slide13-column-first {
+        margin-bottom: 80px;
+    }
+
+    .slide14-background {
+        width: auto;
+        left: auto;
+    }
+}

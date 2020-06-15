@@ -36,21 +36,26 @@ $(document).ready(function () {
 
     //slider
     $('.arrow-right-red').click(function() {
-        $('.slider-cards').scrollLeft(400);
+        $('.slide-wrapper').scrollLeft(400);
         $('.slider-cards' ).animate({ "left": "-=470px" }, "slow" );
         $('.arrow-right-red').css('display', 'none');
         $('.arrow-right-gray').css('display', 'block');
         $('.arrow-left-red').css('display', 'block');
         $('.arrow-left-gray').css('display', 'none');
     })
-
+    //
     $('.arrow-left-red').click(function() {
-        $('.slider-cards').scrollLeft(400);
+        $('.slide-wrapper').scrollLeft(0);
         $('.slider-cards' ).animate({ "left": "+=470px" }, "slow" );
         $('.arrow-right-red').css('display', 'block');
         $('.arrow-right-gray').css('display', 'none');
         $('.arrow-left-red').css('display', 'none');
         $('.arrow-left-gray').css('display', 'block');
     })
+
+    //buttons center
+    if (screen.width <= 992px) {
+        $('.slide3__button').addClass()
+    }
 
 });
