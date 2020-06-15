@@ -1373,6 +1373,9 @@ body {
         width: 470px;
     }
 
+    .header-wrapper {
+        box-shadow: none;
+    }
 
 }
 
